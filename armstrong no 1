@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int num, i, sum = 0, d = 0, temp;
+scanf("%d", &num);
+i = num;
+temp = num;
+while(temp > 0) {
+    temp /= 10;
+    d++;
+}
+temp = num;
+while(temp > 0) {
+    int digit = temp % 10;
+    sum += pow(digit, d);
+    temp /= 10;
+}
+if(sum == i) {
+    printf("Yes\n");
+} else {
+    printf("No\n");
+} 
+    return 0;
+}
