@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,a,b;
+    a=7; b=5;
+    printf("%d %d ",a,b);
+   
+    
+    scanf("%d",&n);
+    for(i=0;i<n-2;i++){
+        if(i%2==0){
+            a++;
+            printf("%d ",a);
+        }else{
+            b++;
+            printf("%d ",b);
+        }
+    }  
+    return 0;
+}
