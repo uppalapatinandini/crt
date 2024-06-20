@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int d,m,y,s,n;
+    scanf("%d %d %d %d",&d,&m,&y,&s);
+    if(s>50 && s<100){
+        n=d+m+y;
+        if(n%3==0 && n%4==0){
+            printf("Cinema Day");
+        }
+    }else{
+        printf("Not a Cinema Day");
+    }
+    return 0;
+}
