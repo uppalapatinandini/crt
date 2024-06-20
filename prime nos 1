@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int s, e, i, j, flag;
+scanf("%d", &s);
+scanf("%d", &e);
+for(i = s; i <= e; i++) {
+    flag = 1;
+    if(i <= 1) {
+        flag = 0;
+    } else {
+        for(j = 2; j * j <= i; j++) {
+            if(i % j == 0) {
+                flag = 0;
+                break;
+            }
+        }
+    }
+    if(flag == 1) {
+        printf("%d ", i);
+    }
+}
+printf("\n");
+    return 0;
+}
