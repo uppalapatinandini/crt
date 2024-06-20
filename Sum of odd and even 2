@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int a[20],n,i,esum,osum;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0,osum=0,esum=0;i<n;i++){
+        if(a[i]%2==0){
+            esum=esum+a[i];
+        }
+        else{
+            osum=osum+a[i];
+        }
+    }printf("%d\n%d\n",osum,esum);
+    return 0;
+}
