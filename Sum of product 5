@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d;
+    scanf("%d\n %d\n",&a,&b);
+    c=a*b;
+    if(c>1000){
+        d=a+b;
+        printf("%d",d);
+    }else{
+        printf("%d",c);
+    }    
+    return 0;
+}
