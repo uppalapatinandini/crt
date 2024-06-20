@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int t, b, s;
+scanf("%d %d %d", &t, &b, &s);
+int c = (t * b) / 100;
+int r = t - c;
+int bb = (r * s) / 100;
+int o = (r - bb) / 3;
+printf("%d\n%d\n%d\n", c, bb, o); 
+    return 0;
+}
