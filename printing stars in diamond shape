@@ -1,0 +1,20 @@
+int n,r,c,s;
+    scanf("%d",&n);
+    for(r=1;r<=n;r++){
+        for(s=1;s<=n-r;s++){
+            printf(" ");
+        }
+        for(c=1;c<=r;c++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(r=1;r<n;r++){
+        for(s=1;s<=r;s++){
+            printf(" ");
+        }
+        for(c=1;c<=n-r;c++){
+            printf("* ");
+        }
+        printf("\n");
+    }
