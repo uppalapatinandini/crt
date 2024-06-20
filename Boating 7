@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d;
+    scanf("%d %d %d",&a,&b,&c);
+ d=(b*75)+(c*45);
+    if(d<=a){
+        printf("Boat is stable");
+    }else{
+        printf("Boat will drown");
+    }
+    return 0;
+}
