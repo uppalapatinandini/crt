@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n, t = 0, m = 1;
+scanf("%d", &n);
+while(n != 0) {
+    int d = n % 10;
+    if(d % 2 == 0) {
+        d += 1;
+    } else {
+        d -= 1;
+    }
+    t += d * m;
+    m *= 10;
+    n /= 10;
+}
+printf("%d\n", t);  
+    return 0;
+}
